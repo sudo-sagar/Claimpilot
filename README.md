@@ -251,8 +251,6 @@ claimpilot/
 │   ├── claims/               # Synthetic claims (CLM-XXXX.json)
 │   ├── chunks.jsonl          # 1,592 retrievable chunks
 │   ├── embeddings.npz        # Precomputed vectors
-│   ├── eval_cases.jsonl      # 50 labeled cases
-│   └── traces.jsonl          # Append-only trace log
 ├── evals/
 │   ├── dataset.jsonl         # Frozen eval dataset
 │   ├── DATASET_HASH.txt      # SHA fingerprint
