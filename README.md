@@ -5,20 +5,10 @@
 
 ```mermaid
 graph TD
-  Streamlit UI ──▶ Agent Layer ──▶ Retrieval Layer │
-│ (3 tabs) (ReAct + (hybrid BM25 + dense │
-│ tools + + RRF fusion) │
-│ guardrails) │
-│ │ │
-│ ▼ │
-│ Tracer ──▶ data/traces.jsonl │
-│ (every LLM call, tool call, cost, │
-│ latency, tokens) │
-│ │ │
-│ ▼ │
-│ Eval Harness │
-│ (5 graders + CI gate) │
-│ │
-│ Data: 12 hdfc ergo PDFs → 1.6M chars → 1,592 chunks │
-│ │
+    A[Streamlit UI<br/>3 tabs] --> B[Agent Layer<br/>ReAct + tools + guardrails]
+    B --> C[Retrieval Layer<br/>BM25 + dense + RRF fusion]
+    B --> D[Tracer<br/>every LLM call, tool call,<br/>cost, latency, tokens]
+    C --> E[Data<br/>12 PDFs → 1.6M chars → 1592 chunks]
+    B --> F[Eval Harness<br/>5 graders + CI gate]
+    D --> G[(data/traces.jsonl)]
 ```
