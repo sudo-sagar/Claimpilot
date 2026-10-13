@@ -1,8 +1,6 @@
 # Claimpilot
 **An enterprise-grade AI system for insurance claims triage.**  Grounded RAG over real insurance policy documents · Multi-agent workflow with tools and guardrails · 5-grader eval harness with CI gate · Full observability (traces, cost, latency).
 
-<img width="940" height="484" alt="image" src="https://github.com/user-attachments/assets/236523a7-df32-4215-9c1d-32f58883aceb" />
-<img width="940" height="484" alt="image" src="https://github.com/user-attachments/assets/ba7822fc-5660-4cfd-a8ef-1a2046f2fc8f" />
 ## Architecture
 
 ```mermaid
@@ -254,14 +252,6 @@ claimpilot/
 └── README.md
 
 
-### Result
-
-
-<img width="940" height="466" alt="image" src="https://github.com/user-attachments/assets/f8fe1582-939e-4cc9-a9cd-d2bd55e32c25" />
-<img width="940" height="752" alt="image" src="https://github.com/user-attachments/assets/e78d8365-579e-40a8-b52b-cbd8345ad7ae" />
-<img width="940" height="484" alt="image" src="https://github.com/user-attachments/assets/3ea7417c-c1db-46e1-bda8-158c9e06705b" />
-<img width="940" height="490" alt="image" src="https://github.com/user-attachments/assets/10e61625-6221-4d31-bf32-2ba52b3ba2b0" />
-<img width="943" height="635" alt="maad5" src="https://github.com/user-attachments/assets/ff68291d-db96-4d78-a7c7-36f64c4c511d" />
 
 
 
