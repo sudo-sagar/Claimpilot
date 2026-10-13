@@ -167,6 +167,20 @@ The eval harness surfaced **5 recurring failure patterns**, each documented with
 | Data | Postgres/pgvector optional; currently file-based (JSONL + npz) |
 
 ---
+## Results
+<img width="940" height="484" alt="image" src="https://github.com/user-attachments/assets/86da6963-8f76-44ea-a712-452b7ad5a1ae" />
+<img width="940" height="614" alt="image" src="https://github.com/user-attachments/assets/2662b768-08fb-4752-9a1b-fd7e83ee6de1" />
+<img width="940" height="466" alt="image" src="https://github.com/user-attachments/assets/87ef32a0-a60e-41df-8e67-c7781936af2b" />
+<img width="940" height="752" alt="image" src="https://github.com/user-attachments/assets/79c6e427-38e3-43a5-93a7-fd1fdbba8d9c" />
+<img width="940" height="484" alt="image" src="https://github.com/user-attachments/assets/89cf986b-f9cd-4995-ad02-49af2b6adfc6" />
+<img width="940" height="490" alt="image" src="https://github.com/user-attachments/assets/408a6c39-29e4-4051-baf7-75795049aeba" />
+<img width="940" height="606" alt="image" src="https://github.com/user-attachments/assets/c982cc1b-f65e-4cce-b8ef-12c418fddb00" />
+<img width="940" height="499" alt="image" src="https://github.com/user-attachments/assets/3d0e6f7c-e3e3-4ac2-8fbf-3c1758e5f964" />
+<img width="940" height="536" alt="image" src="https://github.com/user-attachments/assets/aa175f32-1f83-48d9-bee3-de1dd466cc4c" />
+<img width="940" height="570" alt="image" src="https://github.com/user-attachments/assets/b1315083-6971-4d29-8f8f-6558966ebb06" />
+<img width="808" height="1078" alt="image" src="https://github.com/user-attachments/assets/454af18d-c115-4ef6-b069-035810770e96" />
+<img width="830" height="1086" alt="image" src="https://github.com/user-attachments/assets/502ae90e-5b1f-4671-9b8a-d805dde319a0" />
+
 
 ## Quickstart
 
@@ -215,6 +229,8 @@ python evals/run.py
 python evals/run.py --ci --limit 10
 Report is written to evals/report.md.
 
+
+
 Project structure
 text
 claimpilot/
@@ -250,10 +266,3 @@ claimpilot/
 │   └── eval.yml              # CI eval gate
 ├── requirements.txt
 └── README.md
-
-
-
-
-
-
-
