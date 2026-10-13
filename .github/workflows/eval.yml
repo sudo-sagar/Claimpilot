@@ -1,0 +1,23 @@
+name: Eval Gate
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  evals:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Verify dataset hash
+        run: |
+          python -c "import hashlib; h=hashlib.sha256(open('evals/dataset.jsonl','rb').read()).hexdigest()[:16]; expected=open('evals/DATASET_HASH.txt').read().strip(); assert h==expected, f'Dataset changed! {h} != {expected}'"
+      - name: Run evals (CI mode)
+        env:
+          OPENROUTER_API_KEY: ${{ secrets.API_KEY }}
+        run: python evals/run.py --ci --limit 10
